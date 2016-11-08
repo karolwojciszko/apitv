@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  #get 'tvguide/get'
+  get 'tvguide/get' #,defaults: { start: Time.now }
+
   get 'welcome/index'
  
   root 'welcome#index'
