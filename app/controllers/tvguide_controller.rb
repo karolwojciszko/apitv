@@ -1,14 +1,14 @@
 class TvguideController < ApplicationController
   def get
-  		channels = {}
-  		shows = []
-  		Channel.find_each do |channel|
-  			showsByChannel = Show.where(:channel_id => channel.id)
-  		 	showsByChannel.each do |show|
-  		 		showSchedule = Schedule.where(:show => show.id)
-  		 		shows.push(showSchedule)
-  		 	end
-		end
+  		#channels = {}
+  		#shows = []
+  		#Channel.find_each do |channel|
+  		#	showsByChannel = Show.where(:channel_id => channel.id)
+  		# 	showsByChannel.each do |show|
+  		# 		showSchedule = Schedule.where(:show => show.id)
+  		# 		shows.push(showSchedule)
+  		# 	end
+		#end
 
 		if !params[:start].nil?
 			begin
