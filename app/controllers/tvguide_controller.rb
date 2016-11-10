@@ -11,7 +11,12 @@ class TvguideController < ApplicationController
 		end
 
 		if !params[:start].nil?
-			filterDate = DateTime.parse(params[:start])
+			begin
+				filterDate = DateTime.parse(params[:start])
+			rescue ArgumentError
+			   return render :json => Settings.getError(3).to_json, :status => Settings.getError(3)["status"]
+			end
+
 		else
 			filterDate = Time.now
 		end
