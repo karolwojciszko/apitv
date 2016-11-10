@@ -1,0 +1,156 @@
+FORMAT: 1A
+HOST: https://apitv.herokuapp.com/
+
+# Apitv
+
+Apitv it's application to serve TV guide for other services.
+
+## Get TV guide [/tvguide/get{?start}]
+### get [GET]
++ Parameters 
+    + start (optional,date) - start date for tv guide. F.e: 2016-12-01
+    
++ Response 200 (application/json)
+
+        [
+            {
+            "id": 1,
+            "show_id": 1,
+            "channel_id": 1,
+            "channel_name": "TV1",
+            "show_name": "show1",
+            "show_start": "2016-12-01T08:00:00.000Z",
+            "show_stop": "2016-12-01T08:30:00.000Z",
+            "category_show_id": 1,
+            "category_show_name": "Sport",
+            "category_channel_id": 1,
+            "category_channel_name": "Sport"
+          },
+          {
+            "id": 2,
+            "show_id": 1,
+            "channel_id": 1,
+            "channel_name": "TV1",
+            "show_name": "show1",
+            "show_start": "2016-12-02T08:00:00.000Z",
+            "show_stop": "2016-12-02T08:30:00.000Z",
+            "category_show_id": 1,
+            "category_show_name": "Sport",
+            "category_channel_id": 1,
+            "category_channel_name": "Sport"
+          },
+          {
+            "id": 3,
+            "show_id": 1,
+            "channel_id": 1,
+            "channel_name": "TV1",
+            "show_name": "show1",
+            "show_start": "2016-12-03T08:00:00.000Z",
+            "show_stop": "2016-12-03T08:30:00.000Z",
+            "category_show_id": 1,
+            "category_show_name": "Sport",
+            "category_channel_id": 1,
+            "category_channel_name": "Sport"
+          },
+          {
+            "id": 4,
+            "show_id": 1,
+            "channel_id": 1,
+            "channel_name": "TV1",
+            "show_name": "show1",
+            "show_start": "2016-12-04T08:00:00.000Z",
+            "show_stop": "2016-12-04T08:30:00.000Z",
+            "category_show_id": 1,
+            "category_show_name": "Sport",
+            "category_channel_id": 1,
+            "category_channel_name": "Sport"
+          },
+          {
+            "id": 5,
+            "show_id": 1,
+            "channel_id": 1,
+            "channel_name": "TV1",
+            "show_name": "show1",
+            "show_start": "2016-12-05T08:00:00.000Z",
+            "show_stop": "2016-12-05T08:30:00.000Z",
+            "category_show_id": 1,
+            "category_show_name": "Sport",
+            "category_channel_id": 1,
+            "category_channel_name": "Sport"
+          },
+          {
+            "id": 6,
+            "show_id": 1,
+            "channel_id": 1,
+            "channel_name": "TV1",
+            "show_name": "show1",
+            "show_start": "2016-12-06T08:00:00.000Z",
+            "show_stop": "2016-12-06T08:30:00.000Z",
+            "category_show_id": 1,
+            "category_show_name": "Sport",
+            "category_channel_id": 1,
+            "category_channel_name": "Sport"
+          },
+          {
+            "id": 7,
+            "show_id": 1,
+            "channel_id": 1,
+            "channel_name": "TV1",
+            "show_name": "show1",
+            "show_start": "2016-12-07T08:00:00.000Z",
+            "show_stop": "2016-12-07T08:30:00.000Z",
+            "category_show_id": 1,
+            "category_show_name": "Sport",
+            "category_channel_id": 1,
+            "category_channel_name": "Sport"
+          },
+          {
+            "id": 8,
+            "show_id": 1,
+            "channel_id": 1,
+            "channel_name": "TV1",
+            "show_name": "show1",
+            "show_start": "2016-12-08T08:00:00.000Z",
+            "show_stop": "2016-12-08T08:30:00.000Z",
+            "category_show_id": 1,
+            "category_show_name": "Sport",
+            "category_channel_id": 1,
+            "category_channel_name": "Sport"
+          },
+          {
+            "id": 9,
+            "show_id": 1,
+            "channel_id": 1,
+            "channel_name": "TV1",
+            "show_name": "show1",
+            "show_start": "2016-12-09T08:00:00.000Z",
+            "show_stop": "2016-12-09T08:30:00.000Z",
+            "category_show_id": 1,
+            "category_show_name": "Sport",
+            "category_channel_id": 1,
+            "category_channel_name": "Sport"
+          },
+          {
+            "id": 10,
+            "show_id": 1,
+            "channel_id": 1,
+            "channel_name": "TV1",
+            "show_name": "show1",
+            "show_start": "2016-12-10T08:00:00.000Z",
+            "show_stop": "2016-12-10T08:30:00.000Z",
+            "category_show_id": 1,
+            "category_show_name": "Sport",
+            "category_channel_id": 1,
+            "category_channel_name": "Sport"
+          }
+        ]
+
++ Response 401 (application/json)
+
+        [
+            {
+              "status": 401,
+              "message": "Value of your params is incorrect",
+              "label": "WRONG_PARAMS"
+            }
+        ]
